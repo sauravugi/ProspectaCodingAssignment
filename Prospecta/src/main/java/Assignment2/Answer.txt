@@ -1,0 +1,24 @@
+1. How will you tackle the challenge above ?
+   Firstly, Import Classes Also which is needed than File class to FileReader Object and check File has or not than Scanner or Buffer class to read input.
+   Than try to read Line, Than after Split (", ") store in Key Value Pair in Map Object.
+   Again Try to Spilt (": ") for cell and value than after check if start with "=" than value is in
+   formula form than check with "+-/*" and this way try to solve problem.
+   
+2. What type of errors you would you check for?
+
+   NumberFormatException, CircularException, FileNotFoundException, Arithmetic Exception(If second cell
+    Value is zero and divide expression)
+    
+3. How might a user break your code?
+
+-->Split the String where there are "," 
+--> Now I will create a LinkedHashMap(Because Order Maintain) to store the key-value pairs Key will be the cell
+    and the value will be the value contained in the cell.
+--> Again split by ": " than first store in String array and first value will be cell Number and Second will be value.
+
+--> Again check if Value is number and than add value or if some expression than again split that value.
+    Now will get all entries in the hash map in a set and Iterate over the map I will again go further and break the problem I will separate the 
+    entries which the mathematical expression and value which have an integer value will be mapped in another hash map string a key and integer key 
+    and remove it from the current hash map 
+
+-->	If there some invalid than throw exception or if All goes fine than stored in that Linked HashMap Object
